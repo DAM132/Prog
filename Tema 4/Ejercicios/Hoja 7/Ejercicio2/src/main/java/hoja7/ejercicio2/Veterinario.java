@@ -16,29 +16,22 @@ public class Veterinario {
     private int cont;
 
     public Veterinario() {
-        m = new Mascota[2];
+        m = new Mascota[300];
         cont = 0;
     }
 
-    public void añadir() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Dime el nombre");
-        String n = in.nextLine();
-        System.out.println("Dime el día nac");
-        int d = in.nextInt();
-        System.out.println("Dime el mes de nac");
-        int mont = in.nextInt();
-        System.out.println("Dime el año de nac");
-        int y = in.nextInt();
-        m[cont] = new Mascota(n, y, mont, d);
-        cont++;
+    //modificación 
+    public void añadir(Mascota mascota) {
+        if(m.length>cont){
+        m[cont] = mascota;
+        cont++;}
 
     }
 
     public String mostrar() {
         String cadena = "";
         for (int i = 0; i < cont; i++) {
-            cadena += m[i].toString();
+            cadena += m[i].toString() + " ";
         }
 
         return cadena;
@@ -48,7 +41,7 @@ public class Veterinario {
         String cadena = "";
         for (int i = 0; i < cont; i++) {
             if (m[i].getedad() > 5) {
-                cadena += m[i].toString();
+                cadena += m[i].toString() +" ";
             }
 
         }

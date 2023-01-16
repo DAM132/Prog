@@ -12,11 +12,13 @@ package hoja7.ejercicio2;
 public class Ejercicio2 {
 
     public static void main(String[] args) {
-Veterinario v= new Veterinario();
-v.añadir();
-v.añadir();
-System.out.println(v.mostrar());
-        System.out.print("mayores");
-        System.out.println(v.mostrarMayores());
-        }
+        Veterinario v = new Veterinario();
+        Mascota pupi = new Mascota("pupi", 1992, 1, 1);
+        Mascota miraitowa = new Mascota("miraitowa", 2021, 1, 1);
+
+        v.añadir(pupi);
+        v.añadir(miraitowa);
+        System.out.println("Las mascotas son:" + v.mostrar()+"\n");
+        System.out.println("Las mascotas mayores de 5 años son" + v.mostrarMayores());
+    }
 }

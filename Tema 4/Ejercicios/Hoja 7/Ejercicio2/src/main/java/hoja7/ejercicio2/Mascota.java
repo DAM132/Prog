@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 /**
  *
@@ -17,9 +18,9 @@ public class Mascota {
     private String nombre;
     private LocalDate fechanac;
 
-    public Mascota(String nombre, int year, int m,int d) {
+    public Mascota(String nombre, int y, int m,int d) {
         this.nombre = nombre;
-        fechanac= LocalDate.of(year, m, d);
+        fechanac= LocalDate.of(y, m, d);
     }
     
   public int getedad(){
@@ -29,9 +30,14 @@ public class Mascota {
 
     @Override
     public String toString() {
-                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        //otra forma de poner la fecha
+//                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                
+DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy").withLocale(new Locale("es","ES"));
+//es indirente poner dtf.formar que fechanac.format
+        return "\nMascota " + "nombre " + nombre +" "+ "Fechanac " + dtf.format(fechanac);
+        
 
-        return "\nMascota " + "nombre " + nombre + "\nFechanac " + dtf.format(fechanac);
     }
     
  

@@ -27,21 +27,28 @@ public class Alumno {
         
     }
     
+             //metodo menor
+
     public int menor(){
         Arrays.sort(notas);
         return notas[0];
         
     }
     
+         //metodo mayor
+
    public int mayor(){
        Arrays.sort(notas);
         return notas[notas.length-1];
    } 
    
+     //metodo poner a 0 
+
    public void ponerACero(){
        Arrays.fill(notas, 0);
    }
     
+  //metodo que busca las notas hay que ORDENAR ANTES
 
   public int buscar(int nota){
            
@@ -50,6 +57,8 @@ public class Alumno {
         return Arrays.binarySearch(notas, nota);
       }
   
+  
+  //metodo que devuelve las tres mejores notas
   public int[] tresMejores(){
              Arrays.sort(notas);
 
