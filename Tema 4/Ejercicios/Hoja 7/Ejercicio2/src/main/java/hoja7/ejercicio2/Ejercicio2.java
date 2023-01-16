@@ -12,6 +12,11 @@ package hoja7.ejercicio2;
 public class Ejercicio2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+Veterinario v= new Veterinario();
+v.añadir();
+v.añadir();
+System.out.println(v.mostrar());
+        System.out.print("mayores");
+        System.out.println(v.mostrarMayores());
+        }
 }
