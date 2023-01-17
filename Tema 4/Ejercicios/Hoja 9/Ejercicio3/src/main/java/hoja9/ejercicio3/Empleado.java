@@ -13,6 +13,8 @@ public class Empleado {
 private int sueldo;
 private  String nombre;
 
+
+
     public int getSueldo() {
         return sueldo;
     }
@@ -31,7 +33,7 @@ private  String nombre;
 
     
     public String imprimir() {
-        return "Empleado{" + "sueldo=" + sueldo + ", nombre=" + nombre + '}';
+        return "Empleado{" + "nombre=" + nombre + ", sueldo=" + sueldo + '}';
     }
 
     public boolean impuesto(){
@@ -44,6 +46,20 @@ private  String nombre;
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        if(args.length==2){
+           
+            Empleado e=new Empleado();
+            e.setNombre(args[0]);
+            e.setSueldo(Integer.parseInt(args[1]));
+                    System.out.println(e.imprimir());
+        if(e.impuesto())
+            System.out.println("Paga impuestos");
+        else
+            System.out.println("No paga");
+        }
+        else
+            System.out.println("No tengo datos");
+        
+
     }
 }
