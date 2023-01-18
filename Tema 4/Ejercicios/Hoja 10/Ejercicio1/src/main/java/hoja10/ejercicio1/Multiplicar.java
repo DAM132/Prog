@@ -77,12 +77,12 @@ public int[] valoresAspa(){
         
 }
 
-public int [] tablaMultiplicar(int num){
-    int a[]=new int [10];
+public int [] tablaMultiplicar(int n){
+    int a[]=new int [9];
    int  cont=0;
     
-    for (int i = 0; i < m.length; i++) {
-        a[cont]=m[num][i];
+    for (int i = 0; i < m.length-1; i++) {
+        a[cont]=m[n][i];
         cont++;
     }
     
