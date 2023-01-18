@@ -14,13 +14,15 @@ import java.util.Arrays;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-Multiplicar m=new Multiplicar();
-m.mostrar();
+        Multiplicar m = new Multiplicar();
+        m.mostrar();
         System.out.println("");
+//rellena el 2º matriz        
         m.Multiplicar();
+        //la muestro rellena
         m.mostrar();
         System.out.println(Arrays.toString(m.valoresAspa()));
         System.out.println(Arrays.toString(m.tablaMultiplicar(2)));
-        }
-        
+    }
+
 }
