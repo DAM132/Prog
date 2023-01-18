@@ -39,7 +39,7 @@ public class Ejercicio1 {
             System.out.print(multiplica[i]+", ");
             
         }
-        System.out.print(multiplica.length-1);
+        System.out.print(multiplica[multiplica.length-1]);
     }
 
 }
