@@ -1,0 +1,232 @@
+PROGRAMACION
+JAVA
+INGENIERIA
+SISTEMAS
+SEGURIDAD
+INFORMATICA
+OBJETOS
+CLASES
+
+d: true
+s: false
+Palabra:PROGRAMACION
+S  N  T  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+G  B  V  N  Q  D  P  M  K  P  F  E  T  O  K  
+W  I  Z  V  X  D  R  V  R  K  J  U  K  E  E  
+D  D  X  F  K  B  O  C  K  H  U  P  R  H  O  
+T  I  G  J  Q  Q  G  U  Q  P  W  C  Q  O  P  
+E  Q  C  L  T  M  R  A  O  X  G  N  Z  Z  W  
+E  G  J  E  S  V  A  S  X  R  A  Q  T  F  A  
+O  F  G  Y  D  B  M  K  V  I  Z  N  X  W  H  
+Y  R  B  G  T  W  A  O  D  W  F  Z  Z  K  E  
+T  O  Z  D  P  H  C  P  L  R  Q  C  X  D  T  
+J  S  Y  N  S  Q  I  Q  M  S  O  R  U  G  J  
+V  P  W  B  P  O  O  N  C  E  V  P  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  C  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
+x: 9
+y: 0
+d: true
+s: true
+Palabra:JAVA
+S  N  T  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+G  B  V  N  Q  D  P  M  K  P  F  E  T  O  K  
+W  I  Z  V  X  D  R  V  R  K  J  U  K  E  E  
+D  D  X  F  K  B  O  C  K  H  U  P  R  H  O  
+T  I  G  J  Q  Q  G  U  Q  P  W  C  Q  O  P  
+E  Q  C  L  T  M  R  A  O  X  G  N  Z  Z  W  
+E  G  J  E  S  V  A  S  X  R  A  Q  T  F  A  
+O  F  G  Y  D  B  M  K  V  I  Z  N  X  W  H  
+Y  R  B  G  T  W  A  O  D  W  F  Z  Z  K  E  
+J  A  V  A  P  H  C  P  L  R  Q  C  X  D  T  
+J  S  Y  N  S  Q  I  Q  M  S  O  R  U  G  J  
+V  P  W  B  P  O  O  N  C  E  V  P  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  C  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
+x: 6
+y: 2
+d: false
+s: true
+Palabra:INGENIERIA
+x: 2
+y: 11
+d: false
+s: false
+Palabra:INGENIERIA
+S  N  T  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+G  B  V  N  Q  D  P  M  K  P  F  E  T  O  K  
+W  I  Z  V  X  D  R  V  R  K  J  U  K  E  E  
+D  D  X  F  K  B  O  C  K  H  U  A  R  H  O  
+T  I  G  J  Q  Q  G  U  Q  P  W  I  Q  O  P  
+E  Q  C  L  T  M  R  A  O  X  G  R  Z  Z  W  
+E  G  J  E  S  V  A  S  X  R  A  E  T  F  A  
+O  F  G  Y  D  B  M  K  V  I  Z  I  X  W  H  
+Y  R  B  G  T  W  A  O  D  W  F  N  Z  K  E  
+J  A  V  A  P  H  C  P  L  R  Q  E  X  D  T  
+J  S  Y  N  S  Q  I  Q  M  S  O  G  U  G  J  
+V  P  W  B  P  O  O  N  C  E  V  N  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  I  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
+x: 7
+y: 0
+d: true
+s: false
+Palabra:SISTEMAS
+x: 7
+y: 2
+d: false
+s: false
+Palabra:SISTEMAS
+S  N  S  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+G  B  A  N  Q  D  P  M  K  P  F  E  T  O  K  
+W  I  M  V  X  D  R  V  R  K  J  U  K  E  E  
+D  D  E  F  K  B  O  C  K  H  U  A  R  H  O  
+T  I  T  J  Q  Q  G  U  Q  P  W  I  Q  O  P  
+E  Q  S  L  T  M  R  A  O  X  G  R  Z  Z  W  
+E  G  I  E  S  V  A  S  X  R  A  E  T  F  A  
+O  F  S  Y  D  B  M  K  V  I  Z  I  X  W  H  
+Y  R  B  G  T  W  A  O  D  W  F  N  Z  K  E  
+J  A  V  A  P  H  C  P  L  R  Q  E  X  D  T  
+J  S  Y  N  S  Q  I  Q  M  S  O  G  U  G  J  
+V  P  W  B  P  O  O  N  C  E  V  N  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  I  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
+x: 6
+y: 0
+d: false
+s: false
+Palabra:SEGURIDAD
+D  N  S  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+A  B  A  N  Q  D  P  M  K  P  F  E  T  O  K  
+D  I  M  V  X  D  R  V  R  K  J  U  K  E  E  
+I  D  E  F  K  B  O  C  K  H  U  A  R  H  O  
+R  I  T  J  Q  Q  G  U  Q  P  W  I  Q  O  P  
+U  Q  S  L  T  M  R  A  O  X  G  R  Z  Z  W  
+G  G  I  E  S  V  A  S  X  R  A  E  T  F  A  
+E  F  S  Y  D  B  M  K  V  I  Z  I  X  W  H  
+S  R  B  G  T  W  A  O  D  W  F  N  Z  K  E  
+J  A  V  A  P  H  C  P  L  R  Q  E  X  D  T  
+J  S  Y  N  S  Q  I  Q  M  S  O  G  U  G  J  
+V  P  W  B  P  O  O  N  C  E  V  N  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  I  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
+x: 3
+y: 4
+d: false
+s: false
+Palabra:INFORMATICA
+D  N  S  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+A  B  A  N  A  D  P  M  K  P  F  E  T  O  K  
+D  I  M  V  C  D  R  V  R  K  J  U  K  E  E  
+I  D  E  F  I  B  O  C  K  H  U  A  R  H  O  
+R  I  T  J  T  Q  G  U  Q  P  W  I  Q  O  P  
+U  Q  S  L  A  M  R  A  O  X  G  R  Z  Z  W  
+G  G  I  E  M  V  A  S  X  R  A  E  T  F  A  
+E  F  S  Y  R  B  M  K  V  I  Z  I  X  W  H  
+S  R  B  G  O  W  A  O  D  W  F  N  Z  K  E  
+J  A  V  A  F  H  C  P  L  R  Q  E  X  D  T  
+J  S  Y  N  N  Q  I  Q  M  S  O  G  U  G  J  
+V  P  W  B  I  O  O  N  C  E  V  N  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  I  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
+x: 7
+y: 8
+d: true
+s: true
+Palabra:OBJETOS
+x: 10
+y: 6
+d: false
+s: true
+Palabra:OBJETOS
+x: 5
+y: 2
+d: true
+s: false
+Palabra:OBJETOS
+x: 6
+y: 8
+d: false
+s: false
+Palabra:OBJETOS
+D  N  S  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+A  B  A  N  A  D  P  M  K  P  F  E  T  O  K  
+D  I  M  V  C  D  R  V  S  K  J  U  K  E  E  
+I  D  E  F  I  B  O  C  O  H  U  A  R  H  O  
+R  I  T  J  T  Q  G  U  T  P  W  I  Q  O  P  
+U  Q  S  L  A  M  R  A  E  X  G  R  Z  Z  W  
+G  G  I  E  M  V  A  S  J  R  A  E  T  F  A  
+E  F  S  Y  R  B  M  K  B  I  Z  I  X  W  H  
+S  R  B  G  O  W  A  O  O  W  F  N  Z  K  E  
+J  A  V  A  F  H  C  P  L  R  Q  E  X  D  T  
+J  S  Y  N  N  Q  I  Q  M  S  O  G  U  G  J  
+V  P  W  B  I  O  O  N  C  E  V  N  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  I  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
+x: 2
+y: 4
+d: true
+s: true
+Palabra:CLASES
+x: 11
+y: 7
+d: false
+s: true
+Palabra:CLASES
+x: 8
+y: 1
+d: true
+s: false
+Palabra:CLASES
+x: 12
+y: 0
+d: false
+s: true
+Palabra:CLASES
+x: 7
+y: 0
+d: true
+s: false
+Palabra:CLASES
+x: 5
+y: 3
+d: true
+s: false
+Palabra:CLASES
+x: 11
+y: 3
+d: false
+s: true
+Palabra:CLASES
+x: 0
+y: 8
+d: false
+s: true
+Palabra:CLASES
+x: 8
+y: 13
+d: false
+s: false
+Palabra:CLASES
+D  N  S  Z  S  G  Q  X  T  H  Y  Y  R  V  A  
+A  B  A  N  A  D  P  M  K  P  F  E  T  S  K  
+D  I  M  V  C  D  R  V  S  K  J  U  K  E  E  
+I  D  E  F  I  B  O  C  O  H  U  A  R  S  O  
+R  I  T  J  T  Q  G  U  T  P  W  I  Q  A  P  
+U  Q  S  L  A  M  R  A  E  X  G  R  Z  L  W  
+G  G  I  E  M  V  A  S  J  R  A  E  T  C  A  
+E  F  S  Y  R  B  M  K  B  I  Z  I  X  W  H  
+S  R  B  G  O  W  A  O  O  W  F  N  Z  K  E  
+J  A  V  A  F  H  C  P  L  R  Q  E  X  D  T  
+J  S  Y  N  N  Q  I  Q  M  S  O  G  U  G  J  
+V  P  W  B  I  O  O  N  C  E  V  N  F  G  T  
+W  F  R  M  W  P  N  N  X  F  B  I  C  L  K  
+X  Q  P  D  R  T  R  I  T  L  Z  W  Q  K  H  
+H  Z  L  V  I  C  I  U  F  Q  N  F  W  O  U  
