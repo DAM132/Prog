@@ -15,13 +15,44 @@ public class Articulo {
     protected String desc;
 
     public Articulo() {
-    Scanner in= new Scanner(System.in);
-        System.out.println("Dime el cod");
-        cod=in.nextInt();
-        System.out.println("Dime el precio");
-        precio=in.nextInt();
-        System.out.println("Dime la descripción");
-        desc=in.nextLine();
+    
     }
+
+    public Articulo(int cod, int precio, String desc) {
+        this.cod = cod;
+        this.precio = precio;
+        this.desc = desc;
+    }
+
+    public int getCod() {
+        return cod;
+    }
+
+    public void setCod(int cod) {
+        this.cod = cod;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    @Override
+    public String toString() {
+        return "Articulo{" + "cod=" + cod + ", precio=" + precio + ", desc=" + desc + '}';
+    }
+    
+    
     
 }

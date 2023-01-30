@@ -11,19 +11,67 @@ import java.util.Scanner;
  * @author Ginés
  */
 public class Perecedero extends Articulo {
-    private int mes,ano,caducidad;
+    private int mes,ano;
 
     public Perecedero() {
         super();
-        Scanner in= new Scanner(System.in);
-        System.out.println("Dime el mes");
-        mes=in.nextInt();
-        System.out.println("Dime el año");
-        ano=in.nextInt();
-        System.out.println("Dime la caducidad");
-        caducidad=in.nextInt();
+    
+    }
+
+    public Perecedero(int mes, int ano, int cod, int precio, String desc) {
+        super(cod, precio, desc);
+        this.mes = mes;
+        this.ano = ano;
         
     }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    
+    public int getCod() {
+        return cod;
+    }
+
+    public void setCod(int cod) {
+        this.cod = cod;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+"Perecedero{" + "mes=" + mes + ", ano=" + ano + '}';
+    }
+    
+    
     
     
 }

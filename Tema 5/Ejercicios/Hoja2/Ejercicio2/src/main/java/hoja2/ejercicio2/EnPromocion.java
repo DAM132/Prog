@@ -14,10 +14,24 @@ public class EnPromocion extends Articulo {
     private int des;
 
     public EnPromocion() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Dime el descuento");
-        des=in.nextInt();
-    }
+       super();
     
+    }
+
+    public EnPromocion(int des, int cod, int precio, String desc) {
+        super(cod, precio, desc);
+        this.des = des;
+    }
+
+    public int getDes() {
+        return des;
+    }
+
+ 
+
+    @Override
+    public String toString() {
+        return super.toString()+ "EnPromocion{" + "des=" + des + '}';
+    }
     
 }
