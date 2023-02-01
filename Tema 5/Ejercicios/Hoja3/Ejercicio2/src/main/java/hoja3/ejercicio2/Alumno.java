@@ -28,14 +28,14 @@ public class Alumno extends Persona {
         
     }
 
- 
-
-
-    @Override
+   @Override
 
     public String mostrar() {
-        return super.mostrar() +"Dni" +super.getDni()+ "Alumno{" + "notas=" + Arrays.stream(notas).sum() + '}';
-    }
+        return super.mostrar() +"Dni" +super.getDni()+ "Alumno{" + "notas=" + Arrays.stream(notas).sum()/notas.length + '}';
+    } 
+
+
+ 
     
     
    

@@ -30,8 +30,8 @@ public class Profesor extends Persona {
 }
 
     @Override
-    public String toString() {
-        return super.mostrar()+"Dni" +super.getDni()+ "Profesor{" + "asignaturas=" + Arrays.toString(asignaturas) + '}';
+    public String mostrar() {
+        return super.mostrar()+"Dni" + getDni()+ "Profesor{" + "asignaturas \n" + Arrays.toString(asignaturas).toUpperCase() + '\n';
     }
     
 }

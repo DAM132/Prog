@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package hoja3.ejercicio2;
+package hoja4.ejercicio2;
 
 /**
  *
@@ -12,12 +12,7 @@ package hoja3.ejercicio2;
 public class Ejercicio2 {
 
     public static void main(String[] args) {
-
-        Alumno a= new Alumno(2);
-        Profesor p= new Profesor(2);
-        System.out.println(a.mostrar());
-        System.out.println(p.mostrar());
-        
+Empleado e= new Empleado();
 
     }
 }
