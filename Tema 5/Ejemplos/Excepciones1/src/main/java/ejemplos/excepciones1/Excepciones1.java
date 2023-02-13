@@ -31,19 +31,19 @@ public class Excepciones1 {
     
 	
         //Segundo ejemplo
-        System.out.println("Segundo ejemplo");
-        boolean indiceNoValido=true; 
-	int i; //Entero que tomarÃ¡ nos aleatorios de 0 a 9 
-	String texto[]={"Uno","Dos","Tres","Cuatro","Cinco"}; 
-	while(indiceNoValido){ 
-		try{ 
-			i=(int)(Math.round(Math.random()*9)); 
-			System.out.println(texto[i]); 
-			indiceNoValido=false; 
-		}catch(ArrayIndexOutOfBoundsException exc){ 
-			System.out.println("Fallo en el Ã­ndice"); 
-		}	 
-	} 
+//        System.out.println("Segundo ejemplo");
+//        boolean indiceNoValido=true; 
+//	int i; //Entero que tomarÃ¡ nos aleatorios de 0 a 9 
+//	String texto[]={"Uno","Dos","Tres","Cuatro","Cinco"}; 
+//	while(indiceNoValido){ 
+//		try{ 
+//			i=(int)(Math.round(Math.random()*9)); 
+//			System.out.println(texto[i]); 
+//			indiceNoValido=false; 
+//		}catch(ArrayIndexOutOfBoundsException exc){ 
+//			System.out.println("Fallo en el Ã­ndice"); 
+//		}	 
+//	} 
 //
         //Tercer ejemplo
 //        System.out.println("Tercer ejemplo");
