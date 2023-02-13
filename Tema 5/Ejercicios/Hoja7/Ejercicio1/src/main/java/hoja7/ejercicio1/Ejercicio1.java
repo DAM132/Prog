@@ -36,6 +36,9 @@ System.out.println("Dime un numero");
            
 
         } while (aux);
+        
+        System.out.println("Ahora si es correcto");
     }
+    
 
 }
