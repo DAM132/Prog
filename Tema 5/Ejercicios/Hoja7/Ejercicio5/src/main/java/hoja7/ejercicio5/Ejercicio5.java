@@ -21,9 +21,9 @@ public class Ejercicio5 {
             
       
         Scanner in =new Scanner(System.in);
-        System.out.println("Dime el numero a");
+      
        int a= esEntero();
-        System.out.println("Dime el numero de b");
+      
         int b= esEntero();
         
          Division(a,b);

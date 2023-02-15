@@ -5,6 +5,8 @@
 
 package ejemplos.excepciones1;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -53,17 +55,30 @@ public class Excepciones1 {
 //            System.out.println("Division entre 0");
 //        }
 //        
-//        //Cuarto ejemplo
-//        System.out.println("Cuarto ejemplo");
-//        try{
-//            int a=3;
-//            int b=5;
-//            if(a<b){
-//                throw new Exception();
-//            }
-//        }catch(Exception e){
-//            System.out.println("a es menor que b");
-//        }
+        //Cuarto ejemplo
+        System.out.println("Cuarto ejemplo");
+        try{
+            int a=3;
+            int b=5;
+            if(a<b){
+                System.out.println("test");
+                throw new ArithmeticException();
+                 
+                
+            }
+             
+        }catch(ArithmeticException e){
+            try {
+                System.out.println("a es menor que b");
+                throw new Exception("test");
+            } catch (Exception ex) {
+                Logger.getLogger(Excepciones1.class.getName()).log(Level.SEVERE, null, ex);
+            }
+          
+        }
+        catch(Exception e){
+            System.out.println("");
+        }
     }
     
     public static int Division(int a,int b) throws ArithmeticException{
