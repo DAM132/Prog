@@ -12,7 +12,12 @@ package hoja6.ejercicio1;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-Contenedor c= new Contenedor(,10);
-        
-        }
+DeDos d= new DeDos();
+
+        System.out.println(d.getSiguiente());
+        d.reiniciar();
+        System.out.println(d.getAnterior());
+        System.out.println(d.getSiguiente());
+
+    }
 }

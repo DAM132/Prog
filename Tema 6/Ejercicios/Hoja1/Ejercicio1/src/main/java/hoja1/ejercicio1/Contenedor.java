@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package hoja6.ejercicio1;
+package hoja1.ejercicio1;
 
 import java.util.Arrays;
 
@@ -11,11 +11,11 @@ import java.util.Arrays;
  * @author Ginés
  * @param <T>
  */
-public class Contenedor<T extends Comparable<? super T>>  {
+public class Contenedor<T extends Comparable<T>>  {
     private T objeto []; //se inicializa a null, contenedor vacio
 
     
-    public Contenedor(T[] objetos, int n) {
+    public Contenedor(T[] objetos) {
        
         this.objeto=objetos;
        

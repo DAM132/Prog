@@ -5,8 +5,13 @@
 
 package teclado.claseteclado;
 
+import static java.lang.System.in;
+import java.time.DateTimeException;
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -15,32 +20,67 @@ import java.util.Scanner;
 public class ClaseTeclado {
 
     public static void main(String[] args) {
-        System.out.println(EsBoolean());
-        System.out.println(Esdecimal());
+      Esfecha();
 
     }
+
+    public static LocalDate Esfecha(){
+       LocalDate fecha = null;
+       int dia, mes,anno;
+        boolean aux = false;
+       while(!aux){
+           
+   
+       try{
+
+           dia=esEntero("Dime un día");
+      
+           mes=esEntero("Dime un mes");
+           
+           anno=esEntero("Dime un año");
+           
+           fecha=LocalDate.of(anno, mes, dia);
+           aux=true;
+       }catch(DateTimeException e){
+           System.out.println("Debe ser una fecha!");
+       }
+           }
+        
+        return fecha;
+        
+    }
     
-    public static int Esintnumero(){
+    public static int esEntero(String mensaje){
       
         boolean aux = false;
         int i = 0;
        
-    while(aux==false){
+    
            
      
         Scanner in= new Scanner(System.in);
-        System.out.println("Dime numero");
-        try{  
-            
-     i= in.nextInt();
-     aux=true;
-        }catch(InputMismatchException e){
-            System.out.println("Debe ser un numero");
+        
+             while (!aux) {
+            try {
+                System.out.println(mensaje);
+                i = in.nextInt();
+                aux = true;
+               
+            } catch (InputMismatchException e) {
+                System.out.println("Debe ser un numero");
+                 in.next();
+            }
+
         }
-        }
+ 
+     
+        
         return i;
+           }
+        
             
-    }
+    
+
     
     
     public static String EsTexto(){
@@ -111,7 +151,38 @@ public class ClaseTeclado {
         
     }
     
+    public static String esNombre(String texto){
+      Scanner in= new Scanner(System.in);
+        boolean auxnombre= false;
+          String nombre = "";
+        // esto comprueba el nombre
+       
+    while(!auxnombre){
+           
+
+            System.out.println(texto);
+            try {
+               nombre = in.nextLine();
+
+                if (Pattern.matches("[A-Z][a-zA-Z]*", nombre)) {
+                    auxnombre = true;
+                } else {
+                    System.out.println("No cumple el formato");
+                }
+
+            } catch (InputMismatchException e) {
+                System.out.println("Debe ser un texto");
+            }
+
+        }
+        
+        return nombre;
+    }
+
+
     
     
-    
-}
+} 
+
+
+
