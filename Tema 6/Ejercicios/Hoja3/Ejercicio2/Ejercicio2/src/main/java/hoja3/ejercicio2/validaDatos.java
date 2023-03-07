@@ -1,14 +1,12 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package hoja3.ejercicio2;
 
-package teclado.claseteclado;
-
-import static java.lang.System.in;
 import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.time.Month;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -17,14 +15,9 @@ import java.util.regex.Pattern;
  *
  * @author Ginés
  */
-public class ClaseTeclado {
-
-    public static void main(String[] args) {
-        System.out.println(EsBoolean("dime s o n"));
-
-    }
-
-    public static LocalDate Esfecha(){
+public class validaDatos {
+    
+      public  LocalDate Esfecha(){
        LocalDate fecha = null;
        int dia, mes,anno;
         boolean aux = false;
@@ -54,7 +47,10 @@ public class ClaseTeclado {
       
         boolean aux = false;
         int i = 0;
-        
+       
+    
+           
+     
         Scanner in= new Scanner(System.in);
         
              while (!aux) {
@@ -102,56 +98,30 @@ public class ClaseTeclado {
     }
     
     
-    public static boolean EsBoolean(String m) {
-           char c = ' ';
-           
+    public static boolean EsBoolean(){
+           char i = 'f';
         boolean aux = false;
-        boolean aux1= false;
      Scanner in= new Scanner(System.in);   
-    while(!aux1){
-         
-        
-        System.out.println(m);
-      try{
-          
-              c=in.next().charAt(0);
-       
-       
-        
-        if(c=='s'|| c=='S'){
-              aux=true;
-        aux1=true;
+    while(aux==false){
+           
+        System.out.println("Dime un char");
+       String input = in.next();
+        if (input.length() > 1) {
+            throw new IllegalArgumentException("Please enter single character.");
         }
-
-          
+        char choice = input.charAt(0);
         
-        else if(c=='n'|| c=='N'){
-               aux=false;
-                aux1=true;
-        }
-            
-         
-       
-            
-        else {
-                 throw new Exception("test");
-        }
-        
-      }
-      catch(Exception e){
-          System.out.println(e.getMessage());
-      }
-       
-        }
-        return aux;
-     
-        
-       
+        if(choice=='s')
+            aux=true;
+        else
+            aux=false;
         
             
     }
        
-   
+        return aux;
+    }
+    
     public static double Esdecimal(){
            boolean aux = false;
         double i = 0;
@@ -174,7 +144,7 @@ public class ClaseTeclado {
         
     }
     
-    public static String esNombre(String texto){
+    public  String esNombre(String texto){
       Scanner in= new Scanner(System.in);
         boolean auxnombre= false;
           String nombre = "";
@@ -201,11 +171,22 @@ public class ClaseTeclado {
         
         return nombre;
     }
+    
+    
+    public String dni(String mensaje){
+   static final Pattern REGEXP = Pattern.compile("[0-9]{8}[A-Z]");
+  private  final String DIGITO_CONTROL = "TRWAGMYFPDXBNJZSQVHLCKE";
+  private  final String[] INVALIDOS = new String[] { "00000000T", "00000001R", "99999999R" };
+
+  public  boolean validarDNI(String dni) {
+    return Arrays.binarySearch(INVALIDOS, dni) < 0 // (1)
+	    && REGEXP.matcher(dni).matches() // (2)
+        && dni.charAt(8) == DIGITO_CONTROL.charAt(Integer.parseInt(dni.substring(0, 8)) % 23); // (3)
+    }
+  
+
+
 
 
     
-    
-} 
-
-
-
+}
