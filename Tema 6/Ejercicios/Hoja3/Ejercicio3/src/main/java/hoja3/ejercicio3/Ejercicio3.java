@@ -12,6 +12,17 @@ package hoja3.ejercicio3;
 public class Ejercicio3 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+Agenda a= new Agenda();
+Personas p = new Personas("Gines","priede","71901093B");
+Personas p1 = new Personas("Gines","priede","71901092X");
+
+a.addPersona(p);
+a.addPersona(p1);
+a.mostrarAgenda();
+a.borrarPersona("71901092X");
+a.buscarAgenda("71901093B");
+a.modificarAgenda(p);
+System.out.println("Muestro la agenda");
+a.mostrarAgenda();
     }
 }

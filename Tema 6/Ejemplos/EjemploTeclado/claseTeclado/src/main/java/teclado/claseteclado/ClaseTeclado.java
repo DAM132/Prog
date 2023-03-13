@@ -241,17 +241,16 @@ public class ClaseTeclado {
  
  
 
-  private static final Pattern REGEXP = Pattern.compile("[0-9]{8}[A-Z]");
-  private static final String DIGITO_CONTROL = "TRWAGMYFPDXBNJZSQVHLCKE";
-  //los fija ministerio interior como no validos
-  private static final String[] INVALIDOS = new String[] { "00000000T", "00000001R", "99999999R" };
-
+  
   public static String dnivalidator(String m){
+      
       String dni;
       Scanner in= new Scanner(System.in);
       System.out.println("Dime un dni");
       dni=in.nextLine();
-      while(!validarDNI3(dni)){
+      while(!(Arrays.binarySearch(INVALIDOS, dni) < 0 // (1)
+	    && REGEXP.matcher(dni).matches() // (2)
+        && dni.charAt(8) == DIGITO_CONTROL.charAt(Integer.parseInt(dni.substring(0, 8)) % 23))){
           System.out.println("Dime un dni valido");
            dni=in.nextLine();
       }
@@ -267,7 +266,26 @@ public class ClaseTeclado {
   }
 
 
+ private static final Pattern REGEXP = Pattern.compile("[0-9]{8}[A-Z]");
+  private static final String DIGITO_CONTROL = "TRWAGMYFPDXBNJZSQVHLCKE";
+  //los fija ministerio interior como no validos
+  private static final  String[] INVALIDOS = new String[] { "00000000T", "00000001R", "99999999R" };
 
+  public static String tecladoDni(String m){
+      
+      String dni;
+      Scanner in= new Scanner(System.in);
+      System.out.println("Dime un dni");
+      dni=in.nextLine().toUpperCase();
+      while(!(Arrays.binarySearch(INVALIDOS, dni) < 0 // (1)
+	    && REGEXP.matcher(dni).matches() // (2)
+        && dni.charAt(8) == DIGITO_CONTROL.charAt(Integer.parseInt(dni.substring(0, 8)) % 23))){
+          System.out.println("Dime un dni valido");
+           dni=in.nextLine();
+      }
+        return dni;
+      
+  }     
 
     
     
