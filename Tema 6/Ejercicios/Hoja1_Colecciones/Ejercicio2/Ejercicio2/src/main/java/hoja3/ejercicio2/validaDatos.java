@@ -173,7 +173,7 @@ public class validaDatos {
     }
     
     
-    public String dni(String mensaje){
+
    static final Pattern REGEXP = Pattern.compile("[0-9]{8}[A-Z]");
   private  final String DIGITO_CONTROL = "TRWAGMYFPDXBNJZSQVHLCKE";
   private  final String[] INVALIDOS = new String[] { "00000000T", "00000001R", "99999999R" };

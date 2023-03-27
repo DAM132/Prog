@@ -28,15 +28,19 @@ public class Agenda {
     }
     
     public boolean borrarPersona(Personas aux){
-        boolean salida=false;
-        Iterator <Personas>it= agenda.iterator();
-        
-        while(it.hasNext()&&!salida){
-            if(it.next().getDni().equalsIgnoreCase(aux.getDni()))
-                it.remove();
-            salida=true;
-        }
-        return salida;
+//        boolean salida=false;
+//        Iterator <Personas>it= agenda.iterator();
+//        
+//        while(it.hasNext()&&!salida){
+//            if(it.next().getDni().equalsIgnoreCase(aux.getDni()))
+//                it.remove();
+//            salida=true;
+//        }
+//        return salida;
+
+
+//mismo criterio el dni
+return agenda.remove(aux);
     }
     
     
