@@ -3,18 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package ejemplos.ejemplofile;
+package hoja1.ejercicio1;
 
 import java.io.File;
+import java.util.Scanner;
 
 /**
  *
- * @author Nuria
+ * @author DAM132
  */
-public class EjemploFile {
+public class Ejercicio1 {
 
     public static void main(String[] args) {
-        File f=new File("D:\\Usuarios\\DAM132\\Documents\\prueba\\prueba.txt");
+        Scanner in = new Scanner(System.in);
+        System.out.println("Dime la ruta");
+        String ruta= in.next();
+            File f=new File(ruta);
         File f1=new File("prueba.txt");
         if(f.exists()){
             System.out.println("El fichero existe");
