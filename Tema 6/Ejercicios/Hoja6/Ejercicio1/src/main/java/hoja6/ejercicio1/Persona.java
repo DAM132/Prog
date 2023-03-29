@@ -34,6 +34,8 @@ public class Persona implements Identificable {
          aux.put("apellido", apellidos);
          aux.put("fechanacimiento", fechaNacimiento.format(formatter));
          
+         
+         
         return aux;
     }
 
