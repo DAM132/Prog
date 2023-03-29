@@ -15,8 +15,8 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente {
     
    public static final double  MAX_DESCUBIERTO = 50000;
 
-    public CuentaCorrienteEmpresa(double maximoDescubierto, boolean siAutoriza, Persona titular, String ccc) {
-        super(siAutoriza, titular, ccc);
+    public CuentaCorrienteEmpresa(double maximoDescubierto,Persona titular, String ccc) {
+        super(titular, ccc);
         this.maximoDescubierto = maximoDescubierto;
     }
 

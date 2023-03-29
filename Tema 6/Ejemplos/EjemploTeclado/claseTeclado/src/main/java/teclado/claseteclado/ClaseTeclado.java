@@ -83,7 +83,7 @@ public class ClaseTeclado {
 
     
     
-    public static String EsTexto(){
+    public static String EsTexto(String t){
        boolean aux = false;
         String i = "";
        
@@ -91,7 +91,7 @@ public class ClaseTeclado {
            
      
         Scanner in= new Scanner(System.in);
-        System.out.println("Dime texto");
+        System.out.println(t);
         try{  
             
      i= in.nextLine();

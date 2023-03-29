@@ -15,9 +15,9 @@ public abstract class CuentaCorriente extends CuentaBancaria {
     
     private boolean siAutoriza;
 
-    public CuentaCorriente(boolean siAutoriza, Persona titular, String ccc) {
+    public CuentaCorriente(Persona titular, String ccc) {
         super(titular, ccc);
-        this.siAutoriza = siAutoriza;
+        siAutoriza=true;
     }
 
     
