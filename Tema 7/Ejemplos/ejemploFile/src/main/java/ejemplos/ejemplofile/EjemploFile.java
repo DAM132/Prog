@@ -14,8 +14,7 @@ import java.io.File;
 public class EjemploFile {
 
     public static void main(String[] args) {
-        File f=new File("D:\\Usuarios\\DAM132\\Documents\\prueba\\prueba.txt");
-        File f1=new File("prueba.txt");
+        var f=new File("D:\\Usuarios\\DAM132\\Documents\\prueba\\prueba.txt");
         if(f.exists()){
             System.out.println("El fichero existe");
         }else{
