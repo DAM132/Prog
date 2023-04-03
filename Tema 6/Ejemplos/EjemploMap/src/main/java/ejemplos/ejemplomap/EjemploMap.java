@@ -103,6 +103,7 @@ public class EjemploMap {
         for (Map.Entry<Integer, String> jugador : linkedHashMap.entrySet()) {
             Integer clave = jugador.getKey();
             String valor = jugador.getValue();
+            
             System.out.println(clave + "  ->  " + valor);
         }
           System.out.println("\n\n********* TreeMap con Objetos y como Clave un String *********");
@@ -124,6 +125,13 @@ public class EjemploMap {
             Jugador valor = jugador.getValue();
             System.out.println(clave + "  ->  " + valor.toString());
         }
+        // fore funcional 
+         System.out.println("Esto es un FORE");
+        jugadores.forEach((k,v) -> System.out.println("Claves " + k  + v));
+         System.out.println("Esto es otro FORE");
+        jugadores.entrySet().stream().forEach(e-> System.out.println("clave " + e.getKey() + "jugador " + e.getValue()));
+        
+        
 
         // Cuidado con comparar objetos que son iguales pero no son lo mismo
         Jugador villa = new Jugador(7, "Villa", "Delantero");
