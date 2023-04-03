@@ -5,6 +5,7 @@
 package hoja6.ejercicio1;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  *
@@ -21,6 +22,8 @@ public class CuentaCorrientePersonal extends CuentaBancaria {
         this.ComisionMantenimiento = ComisionMantenimiento;
     }
 
+    
+    
     public double getComisionMantenimiento() {
         return ComisionMantenimiento;
     }
@@ -63,12 +66,12 @@ public class CuentaCorrientePersonal extends CuentaBancaria {
                 saldo-=cantidad;
     }
     
-           public HashMap<String, String> listaObjeto() {
-         HashMap<String, String> aux;
-         aux = new HashMap();
-         aux.put("Tipo de cuenta", "Cuenta Corriente Persona");
+           public LinkedHashMap<String, String> listaObjeto() {
+         LinkedHashMap<String, String> aux;
+         aux = new LinkedHashMap();
+         aux.put("Tipo de cuenta", "\nCuenta Corriente Personal");
          aux.putAll(super.listaObjeto());
-         aux.put("ComisionMantenimiento", String.valueOf(ComisionMantenimiento));
+         aux.put("\nComisionMantenimiento", String.valueOf(ComisionMantenimiento));
          
         return aux;
     }

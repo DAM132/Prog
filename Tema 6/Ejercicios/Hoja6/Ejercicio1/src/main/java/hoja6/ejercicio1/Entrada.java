@@ -6,6 +6,7 @@ package hoja6.ejercicio1;
 
 import java.util.HashMap;
 import java.util.InputMismatchException;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -62,7 +63,7 @@ public class Entrada {
 }
     
     
-    public static String recorrerMapas(HashMap<String,String> entidad){
+    public static String recorrerMapas(LinkedHashMap<String,String> entidad){
         String salida=" ";
         
       

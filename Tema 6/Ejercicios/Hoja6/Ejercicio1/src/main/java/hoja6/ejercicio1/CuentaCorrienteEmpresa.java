@@ -4,7 +4,7 @@
  */
 package hoja6.ejercicio1;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  *
@@ -65,12 +65,13 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente {
                 saldo-=cantidad;
     }
     
-           public HashMap<String, String> listaObjeto() {
-         HashMap<String, String> aux;
-         aux = new HashMap();
-         aux.put("Tipo de cuenta", "Cuenta Corriente Empresa");
-         aux.putAll(super.listaObjeto());
-         aux.put("Maximo Descubierto", String.valueOf(maximoDescubierto));
+           public LinkedHashMap<String, String> listaObjeto() {
+         LinkedHashMap<String, String> aux;
+         aux = new LinkedHashMap();
+           aux.putAll(super.listaObjeto());
+         aux.put("\nTipo de cuenta ", "\nCuenta Corriente Empresa ");
+       
+         aux.put("\nMaximo Descubierto ", String.valueOf(maximoDescubierto));
          
         return aux;
     }

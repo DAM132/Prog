@@ -67,13 +67,5 @@ public class EntidadBancaria {
 
     }
     
-    public void ingresar(String ccc){
-        if(!entidad.isEmpty())
-            if(entidad.containsKey(ccc)){
-                CuentaBancaria aux= entidad.get(ccc);
-                aux.getSaldo()
-                
-            }
-                
-    }
+  
 }

@@ -7,6 +7,7 @@ package hoja6.ejercicio1;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  *
@@ -26,13 +27,17 @@ public class Persona implements Identificable {
     
 
     @Override
-    public HashMap<String, String> listaObjeto() {
-         HashMap<String, String> aux;
-         aux = new HashMap();
+    public LinkedHashMap<String, String> listaObjeto() {
+         LinkedHashMap<String, String> aux;
+         aux = new LinkedHashMap();
           DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-         aux.put("nombre", nombre);
-         aux.put("apellido", apellidos);
-         aux.put("fechanacimiento", fechaNacimiento.format(formatter));
+        
+           
+           aux.put("\nnombre ", nombre);
+           aux.put("\napellido ", apellidos);
+        aux.put("\nfechanacimiento ", fechaNacimiento.format(formatter));
+        
+        
          
          
          

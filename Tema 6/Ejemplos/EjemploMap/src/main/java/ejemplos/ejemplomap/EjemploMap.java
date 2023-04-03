@@ -129,6 +129,8 @@ public class EjemploMap {
          System.out.println("Esto es un FORE");
         jugadores.forEach((k,v) -> System.out.println("Claves " + k  + v));
          System.out.println("Esto es otro FORE");
+         String cadena=" ";
+         
         jugadores.entrySet().stream().forEach(e-> System.out.println("clave " + e.getKey() + "jugador " + e.getValue()));
         
         

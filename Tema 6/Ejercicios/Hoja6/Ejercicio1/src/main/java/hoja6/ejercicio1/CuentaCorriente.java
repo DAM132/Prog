@@ -6,6 +6,7 @@ package hoja6.ejercicio1;
 
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  *
@@ -21,9 +22,9 @@ public abstract class CuentaCorriente extends CuentaBancaria {
     }
 
     
-   public HashMap<String, String> listaObjeto() {
-         HashMap<String, String> aux;
-         aux = new HashMap();
+   public LinkedHashMap<String, String> listaObjeto() {
+         LinkedHashMap<String, String> aux;
+         aux = new LinkedHashMap();
           DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
          aux.putAll(super.listaObjeto());
          aux.put("Autoriza", siAutoriza?"s":"n");

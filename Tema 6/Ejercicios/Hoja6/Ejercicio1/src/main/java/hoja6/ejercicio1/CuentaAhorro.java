@@ -6,6 +6,7 @@ package hoja6.ejercicio1;
 
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  *
@@ -50,9 +51,9 @@ public  class CuentaAhorro extends CuentaBancaria{
     }
 
     
-       public HashMap<String, String> listaObjeto() {
-         HashMap<String, String> aux;
-         aux = new HashMap();
+       public LinkedHashMap<String, String> listaObjeto() {
+         LinkedHashMap<String, String> aux;
+         aux = new LinkedHashMap();
          aux.put("Tipo de cuenta", "Cuenta de ahorro");
          aux.putAll(super.listaObjeto());
          aux.put("Tipo interes", String.valueOf(tipoInteres));

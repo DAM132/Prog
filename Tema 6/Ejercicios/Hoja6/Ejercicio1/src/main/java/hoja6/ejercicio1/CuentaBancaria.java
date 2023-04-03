@@ -6,6 +6,7 @@ package hoja6.ejercicio1;
 
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  *
@@ -29,15 +30,15 @@ public abstract class  CuentaBancaria implements Identificable {
     
 
     @Override
-    public HashMap<String, String> listaObjeto() {
-         HashMap<String, String> aux;
-         aux = new HashMap();
+    public LinkedHashMap<String, String> listaObjeto() {
+         LinkedHashMap<String, String> aux;
+         aux = new LinkedHashMap();
           DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
          aux.putAll(titular.listaObjeto());
-         aux.put("Entidad", entidad);
-         aux.put("Oficina", oficina);
-         aux.put("cuenta", cuenta);
-         aux.put("saldo", String.format("%,.2f", saldo));
+         aux.put("\nEntidad ", entidad);
+         aux.put("\nOficina ", oficina);
+         aux.put("\ncuenta ", cuenta);
+         aux.put("\nsaldo ", String.format("%,.2f", saldo));
          
         return aux;
     }
