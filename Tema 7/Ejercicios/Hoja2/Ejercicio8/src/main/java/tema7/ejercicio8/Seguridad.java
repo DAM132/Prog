@@ -1,11 +1,12 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package tema7.ejercicio8;
 
-package hoja2.ejercicio4;
-
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -13,21 +14,25 @@ import java.io.IOException;
  *
  * @author DAM132
  */
-public class Ejercicio4 {
-
-    public static void main(String[] args) {
-        //4.- Realizar un programa que copie un fichero en otro cuyos nombres pasaremos como
-//argumentos a través de la línea de órdenes.
-
-  FileInputStream fi = null;
+public class Seguridad {
+    
+    private static int clave=5;
+    
+    public static void encriptar(File f){
+        FileInputStream fi = null;
         FileOutputStream fo = null;
+        File faux = null;
         int c;
         try {
-            fi = new FileInputStream(args[0]);
-            fo = new FileOutputStream(args[1]);
+            faux = new File("aux.txt");
+            fi = new FileInputStream(f);
+            fo = new FileOutputStream(faux);
             while ((c = fi.read()) != -1) {
-                fo.write(c);
+                fo.write(c + clave);
             }
+        } catch (FileNotFoundException e) {
+
+            System.out.println("Fichero no encontrado");
         } catch (IOException e) {
             System.out.println(e.toString());
         } finally {
@@ -37,16 +42,18 @@ public class Ejercicio4 {
             } catch (IOException ex) {
                 System.out.println("Error al cerrar el fichero.");
             }
-            
-            if(fo!=null)
+
+            if (fo != null && fi != null && faux != null)
                 
             try {
                 fo.close();
+
             } catch (IOException ex) {
                 System.out.println("Error al cerrar el fichero.");
             }
-            
-        }
 
+        }
     }
-}
+    }
+    
+
