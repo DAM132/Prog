@@ -28,7 +28,7 @@ public class Ejercicio7 {
         String linea;
        int cont=0;
        boolean aux=false;
-            
+          String frase = "";  
     
         try {
             fr = new FileReader("poema.txt");
@@ -36,9 +36,14 @@ public class Ejercicio7 {
              fw = new FileWriter("salida.txt");
              pw= new PrintWriter(fw);
             
-            while ((linea = br.readLine) != null) {
-                System.out.println(linea.charAt(cont));
+            while ((linea = br.readLine()) != null) {
+                
                 cont++;
+                for (int i = 0; i < linea.length(); i++) {
+                     frase+=(char)(linea.charAt(i)-cont);
+                }
+                System.out.println(frase);
+                pw.println(frase);
             }
         } catch (IOException ex) {
             System.err.println(ex.toString());
