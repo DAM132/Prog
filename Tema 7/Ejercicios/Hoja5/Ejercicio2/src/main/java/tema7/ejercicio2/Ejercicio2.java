@@ -20,7 +20,9 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        File f = new File("test.txt");
+        crear(f);
+        leer(f);
     }
     
     
@@ -54,19 +56,28 @@ public class Ejercicio2 {
         BufferedReader br = null;
         String linea;
         
+       String charreplace =Teclado.EsTexto("Dime un caracter");
+        
         try {
             fr = new FileReader(fichero);
             br = new BufferedReader(fr);
             while ((linea = br.readLine()) != null) {
-                linea.replace("aeiou", linea);
-               
-                
+                linea= linea.toLowerCase();
+                linea.replace('a', 'u');
+               linea.replace('o', charreplace.charAt(0));
+                linea.replace('i', charreplace.charAt(0));
+              linea.replace('u', charreplace.charAt(0));
+              linea.replace('e', charreplace.charAt(0));
               
+               System.out.println(linea);
+              
+                
             }
         } catch (IOException ex) {
             System.err.println(ex.toString());
             
         } finally {
+           
           
             if (br != null)
                 try {
