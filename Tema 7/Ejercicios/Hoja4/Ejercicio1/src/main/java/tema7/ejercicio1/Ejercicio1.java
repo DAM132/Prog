@@ -12,8 +12,11 @@ import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 /**
  *
@@ -33,32 +36,25 @@ public class Ejercicio1 {
   
     
     public static void crear(File fichero) {
-  String nombre;
-  int edad;
-  FileOutputStream f = null;
-  DataOutputStream fd = null;
-  boolean resp;
-  try {
-    f = new FileOutputStream(fichero); 
-    fd = new DataOutputStream(new BufferedOutputStream(f));    
-    do {
-      nombre = Teclado.EsTexto("Introduce nombre: ");
-      edad = Teclado.esEntero("Introduce edad: ");
-      //lo grabamos en el fichero
-      fd.writeUTF(nombre);
-      fd.writeInt(edad);
-      resp = Teclado.EsBoolean("Otro registro: ");
-    } while (resp);
-  } catch (IOException ex) {
-    System.out.println("error " + ex.toString());
-  } finally {
-    if (fd != null) 
-      try {
-      fd.close();
-    } catch (IOException ex) {
-      System.out.println("Error al cerrar el fichero.");
-    }  
-  }
+  Scanner sc = new Scanner(System.in);
+        PrintWriter salida = null;
+        try {
+            salida = new PrintWriter("datos.txt");
+            String cadena;
+            System.out.println("Introduce texto:");
+            cadena = sc.nextLine();
+            while (!cadena.equalsIgnoreCase("*")) {
+                salida.println(cadena);
+                cadena = sc.nextLine();
+            }
+            salida.flush();
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            if (salida != null) {
+                salida.close();
+            }
+        }
   
    }
     

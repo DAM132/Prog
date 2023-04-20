@@ -35,7 +35,7 @@ public class Ejercicio3 {
  
         while (!salir) {
  
-            System.out.println("1. Añadir un nuevo donativo (pide datos y añade un nuevo registro)");
+            System.out.println("1. Introducir alumnos");
             System.out.println("2- Comprobar los que promocionan");
             System.out.println("3- visualizar los dos ficheros");
             System.out.println("4- Salir");
@@ -141,7 +141,7 @@ public class Ejercicio3 {
   try {
     //creamos un flujo hacia el fichero
     f = new FileInputStream(fichero);
-      FileOutputStream fo = new FileOutputStream(ficherosalida, true);
+      FileOutputStream fo = new FileOutputStream(fichero, true);
     fd = new DataInputStream(new BufferedInputStream(f));
      fdo = new DataOutputStream(new BufferedOutputStream(fo));
     do {
