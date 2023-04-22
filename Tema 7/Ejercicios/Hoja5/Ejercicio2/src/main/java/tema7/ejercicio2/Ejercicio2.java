@@ -24,11 +24,10 @@ public class Ejercicio2 {
         crear(f);
         leer(f);
     }
-    
-    
-        public static void crear(File fichero) {
- Scanner sc = new Scanner(System.in);
-        
+
+    public static void crear(File fichero) {
+        Scanner sc = new Scanner(System.in);
+
         PrintWriter salida = null;
         try {
             salida = new PrintWriter(fichero);
@@ -47,36 +46,43 @@ public class Ejercicio2 {
                 salida.close();
             }
         }
-  
-   }
-        
-        
-            public static void leer(File fichero) {
-       FileReader fr;
+
+    }
+
+    public static void leer(File fichero) {
+        FileReader fr;
         BufferedReader br = null;
         String linea;
-        
-       String charreplace =Teclado.EsTexto("Dime un caracter");
-        
+
+        String charreplace = Teclado.EsTexto("Dime un caracter");
+
         try {
             fr = new FileReader(fichero);
             br = new BufferedReader(fr);
             while ((linea = br.readLine()) != null) {
-                linea= linea.toLowerCase();
-                linea.replace('a', 'u');
-               linea.replace('o', charreplace.charAt(0));
-                linea.replace('i', charreplace.charAt(0));
-              linea.replace('u', charreplace.charAt(0));
-              linea.replace('e', charreplace.charAt(0));
-              
-               System.out.println(linea);
-              
-                
+//remplazo todos las variables con replaces 
+                linea = linea.replace('a', charreplace.charAt(0));
+                linea = linea.replace('e', charreplace.charAt(0));
+                linea = linea.replace('i', charreplace.charAt(0));
+                linea = linea.replace('o', charreplace.charAt(0));
+                linea = linea.replace('u', charreplace.charAt(0));
+                System.out.println(linea);
+
             }
         } catch (IOException ex) {
+
+
             System.err.println(ex.toString());
+                  //tengo que generar una variable aux para poder guardar todo el string 
+                
+  
             
         } finally {
+        
+              
+          
+              
+              
            
           
             if (br != null)
