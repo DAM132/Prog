@@ -153,3 +153,42 @@ File test=new File("Alumnos.dat");
  
 }
 }
+
+
+      nombre = fd.readUTF();
+                apellidos = fd.readUTF();
+                sexo = fd.readChar();
+                edad = fd.readInt();
+                nsuspensos = fd.readInt();
+                residencia = fd.readBoolean();
+                ingresos = fd.readDouble();
+                 String hola="hola";
+                  fdo.writeUTF(hola);
+                System.out.println(nsuspensos);
+               if(nsuspensos<=1){
+                   fdo.writeUTF(nombre);
+                 System.out.println(nombre);
+               fdo.writeUTF(apellidos);
+               fdo.writeChar(sexo);
+               fdo.writeInt(edad);
+               fdo.writeChar(nsuspensos);
+               fdo.writeBoolean(residencia);
+               fdo.writeDouble(ingresos);
+               fdo.writeInt(dinero);
+              
+             
+                   if(ingresos>=12000)
+                   dinero+=500;
+               else if (nsuspensos==0)
+                   dinero+=500;
+               else if(nsuspensos==1)
+                   dinero+=200;
+               else if(residencia)
+                   dinero+=1000;
+                   
+                 
+                    
+                   
+               }
+                
+                

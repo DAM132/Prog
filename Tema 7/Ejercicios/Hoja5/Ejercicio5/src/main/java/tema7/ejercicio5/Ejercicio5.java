@@ -22,14 +22,12 @@ import java.io.IOException;
 public class Ejercicio5 {
 
     public static void main(String[] args) {
-//Realizar un programa que lea de teclado (la entrada estándar) los siguientes datos:
-//Nombre y apellido de un supuesto becario.
-//Sexo (H/M)
-//Edad (20/60)
-//Numero de suspensos del curso anterior (0/4)
-//Residencia familiar (SI/NO)
-//Ingresos anuales de la familia.
-//Los datos se almacenan en un fichero binario llamado “datosbeca.bin"
+File f= new File("beca.bin");
+crear(f);
+crear(f);
+leer(f);
+
+
 
     }
     
@@ -63,6 +61,7 @@ public class Ejercicio5 {
             fd.writeUTF(nombre);
             fd.writeUTF(apellidos);
             fd.writeChar(sexo);
+            fd.writeInt(edad);
             fd.writeInt(nsuspensos);
             fd.writeBoolean(residencia);
             fd.writeDouble(ingresos);
@@ -106,7 +105,7 @@ public class Ejercicio5 {
                 residencia = fd.readBoolean();
                 ingresos = fd.readDouble();
                 System.out.println("Nombre " + nombre + "\nApellidos " + apellidos + "\n sexo " + sexo + "\n edad " + edad + 
-                        "\nNumero suspensos" + nsuspensos);
+                        "\nNumero suspensos" + nsuspensos + "residencia"+ (residencia? "Si": "No") + "ingresos" + ingresos );
 
             } while (!fin);
 
