@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package tema7.ejercicio6;
+package tema7.ejercicio1;
 
 import java.io.EOFException;
 import java.io.File;
@@ -21,7 +21,7 @@ import java.util.Scanner;
  *
  * @author DAM132
  */
-public class Ejercicio6 {
+public class Ejercicio1 {
 
     public static void main(String[] args) {
         File f= new File("datos.dat");
@@ -38,12 +38,24 @@ public class Ejercicio6 {
            switch(opcion){
                case 1:
                    System.out.println("Has seleccionado la opcion 1");
+                   Escribir(f);
                    break;
                case 2:
                    System.out.println("Has seleccionado la opcion 2");
+                   Leer(f);
                    break;
                 case 3:
                    System.out.println("Has seleccionado la opcion 3");
+                   boolean aux= false;
+                   //no  se puede delete a secas hay que hacer exists porque si no existe no puede borrarse 
+                   if(f.exists())
+                   {
+                    f.delete();
+                    aux=true;
+                   }
+                   
+                
+                
                    break;
                 case 4:
                    salir=true;

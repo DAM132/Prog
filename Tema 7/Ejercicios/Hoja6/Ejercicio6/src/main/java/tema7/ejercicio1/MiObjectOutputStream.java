@@ -3,7 +3,7 @@
  * Redefinicion de la clase ObjectOutputStream para que no escriba una cabecera
  * al principio del Stream.
  */
-package tema7.ejercicio6;
+package tema7.ejercicio1;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
